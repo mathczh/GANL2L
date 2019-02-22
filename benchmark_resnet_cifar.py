@@ -1,0 +1,37 @@
+LOSS_TYPE = 'dcgan'
+ARCH = "resnet"
+
+
+SHOW_SV_INFO = True
+SHOW_BN_INFO = True
+EPOCHES = 256
+
+NORM_TYPE = 'OR+BN'
+main()
+NORM_TYPE = 'SN+BN'
+main()
+
+NORM_TYPE = 'UVR+BN'
+UVR_MODE = 1
+ADDITIONAL_INFO = "_Mode1"
+main()
+
+NORM_TYPE = 'UVR+BN'
+UVR_MODE = 2
+ADDITIONAL_INFO = "_Mode2"
+main()
+
+NORM_TYPE = 'UVR+BN'
+UVR_MODE = 3
+ADDITIONAL_INFO = "_Mode3"
+main()
+
+NORM_TYPE = 'UVR+BN'
+UVR_MODE = 7
+ADDITIONAL_INFO = "_Mode7"
+main()
+
+NORM_TYPE = 'UVR+BN'
+UVR_MODE = 8
+ADDITIONAL_INFO = "_Mode8"
+main()
